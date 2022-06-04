@@ -5,6 +5,10 @@ body {
     flex-direction: column;
 }
 
+header {
+    max-height: 64px;
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -17,17 +21,36 @@ h2 {
     font-size: 1.2rem!important;
 }
 
+.custom-logo {
+    font-family: 'Berkshire Swash', cursive;
+    margin-left: 20px;
+}
+
 .parallax-title {
-    font-family: 'Arvo', serif;
+    font-family: 'Berkshire Swash', cursive;
     text-align: center;
-    font-size: 3.6rem;
+    font-size: 5rem;
     line-height: 0;
     color: #1c898f;
 }
 
 .parallax-subtitle {
     font-family: 'Arvo', serif;
-    text-align: center;
     font-size: 1.3rem;
     color: #474554;
+    background: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Responsive medias */
+@media screen and (max-height: 450px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+    .custom-logo {
+        margin-left: 0px;
+    }
 }
