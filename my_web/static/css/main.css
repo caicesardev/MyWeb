@@ -26,6 +26,12 @@ h2 {
     margin-left: 20px;
 }
 
+.footer-custom-logo {
+    font-family: 'Berkshire Swash', cursive;
+    color: white;
+    font-size: 30px;
+}
+
 .parallax-title {
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
