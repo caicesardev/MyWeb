@@ -4,84 +4,193 @@
 
 {% block content %}
 
-
 <div class="parallax-container z-depth-1">
-
     <div class="parallax">
         <img src="{% static 'images/parallax.jpg' %}" alt="parallax-image">
     </div>
-
     <div class="container">
-
         <div class="row" style="margin-top: 100px;">
-
             <p class="parallax-title col s12">Hola Mundo</p>
-
         </div>
-
         <div style="display: flex; justify-content: center;" class="row">
-
             <p class="parallax-subtitle z-depth-1">Soy Caio Gomes, desarrollador Full-Stack
                 de páginas web y aplicaciones.
             </p>
-
         </div>
-
         <div style="display: flex; justify-content: center;" class="container row">
-
             <a style="margin-right: 10px;" href="{% url 'about' %}"
                 class="indigo waves-effect waves-light btn-large">Saber
                 más</a>
             <a href="{% url 'contact' %}" class="indigo waves-effect waves-light btn-large">Contactar</a>
+        </div>
+    </div>
+</div>
 
+<div class="blue lighten-5" style="padding-top: 20px; padding-bottom: 20px;">
+    <div class="container">
+        <h1 style="text-align: center; font-weight: bold;">Mis proyectos más recientes</h1>
+        <h2 style="text-align: center;">Estos son algunos de mis proyectos más recientes. Algunos
+            aún están en
+            desarrollo. Puedes consultar todos mis proyectos <a style="text-decoration: underline;"
+                href="https://github.com/caicesardev?tab=repositories" target="_blank">aquí</a>.</h2>
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://raw.githubusercontent.com/caicesardev/GUIDownloader/master/res/images/GUIDownloader-screenshot-2.png"
+                            alt="GUIDownloader-screenshot">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">GUIDownloader</span>
+                        <p>GUIDownloader es un programa que permite descargar vídeos de YouTube simplemente con
+                            introducir el enlace.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="indigo-text">Saber
+                            más</a>
+                        <a href="https://github.com/caicesardev/GUIDownloader" target="_blank" class="indigo-text">Ver
+                            código</a>
+                        <p class="red-text">* Proyecto en desarrollo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 l6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://raw.githubusercontent.com/caicesardev/Notepy/master/res/images/notepy-screenshot-1.png"
+                            alt="Notepy-screenshot">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Notepy</span>
+                        <p>Notepy es un programa que permite escribir documentos de texto como el bloc de notas de
+                            Windows.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="indigo-text">Saber más
+                        </a>
+                        <a href="https://github.com/caicesardev/Notepy" target="_blank" class="indigo-text">Ver
+                            código</a>
+                        <p class="red-text">* Proyecto en desarrollo</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="{% static 'images/ecommerce-store.jpg' %}" alt="ecommerce-store">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Ecommerce</span>
+                        <p>Este es un Ecommerce creado y diseñado por mi con el fin de aprender a tiendas
+                            online.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="indigo-text">Saber más</a>
+                        <a href="#" target="_blank" class="indigo-text">Ver código</a>
+                        <p class="red-text">* Proyecto en desarrollo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 l6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://raw.githubusercontent.com/caicesardev/CSVTOACCESS/master/images/CSVTOACCESS-screenshot-1.png"
+                            alt="CSVToAccess-screenshot">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">CSVToAccess</span>
+                        <p>CSVToAccess es un Script escrito en Python que permitía escribir los datos de un archivo CSV
+                            a una tabla de una base de datos de MS Access.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="indigo-text">Saber más</a>
+                        <a href="https://github.com/caicesardev/CSVTOACCESS" target="_blank" class="indigo-text">Ver
+                            código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="{% static 'images/this_web.png' %}" alt="this_web-screenshot">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Mi pàgina web</span>
+                        <p>Esta es mi página web personal donde publico todos mis proyectos y en un futuro contará con
+                            un blog.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="indigo-text">Saber
+                            más </a>
+                        <a href="#" target="_blank" class="indigo-text">Ver código</a>
+                        <p class="red-text">* Proyecto en desarrollo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-
+<div>
+    <div class="container">
+        <h1 style="text-align: center; font-weight: bold;">Acerca de mí</h1>
+        <h2 style="text-align: center;">Un resumen acerca de mí, esta página web y mis objetivos profesionales.</h2>
+        <div class="row">
+            <div class="col s12">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://materializecss.com/images/office.jpg" alt="GUIDownloader-screenshot">
+                    </div>
+                    <div class="card-content">
+                        <h2>Sobre mí</h2>
+                        <p>
+                            Me llamo Caio Cesar Gomes, soy desarrollador web y de aplicaciones de escritorio
+                            autodidacta con 2 años de experiencia. Domino lenguajes como:
+                        </p>
+                        <ul class="collection">
+                            <li class="collection-item">HTML5 ~ 2 años de experiencia</li>
+                            <li class="collection-item">CSS3 ~ 2 años de experiencia</li>
+                            <li class="collection-item">Python ~ 2 años de experiencia</li>
+                        </ul>
+                        <h2>Mis objetivos</h2>
+                        <p>
+                            Aspiro a ser un gran profesional en este sector y a aprender cada día más. Espero algun
+                            día encontrar trabajo en alguna de las empresas FAANG y poder sobresalir como
+                            desarrollador y persona.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{% url 'about' %}" class="indigo-text">
+                            Saber más
+                        </a>
+                        <a href="#" class="indigo waves-effect waves-light btn-large">Descargar CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="blue lighten-5">
 
-    <div class="container">
-
-        <div class="row">
-            <div class="col s12">
-
-                <div class="card small col s4 push-l2">
-                    <div class="card-image">
-                        <img src="https://materializecss.com/images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                </div>
-
-                <div class="card small col s4 push-l2">
-                    <div class="card-image">
-                        <img src="https://materializecss.com/images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                </div>
-
-            </div>
+    <div class="container" style="padding-top: 20px; padding-bottom: 60px;">
+        <h1 style="text-align: center; font-weight: bold;">Contáctame</h1>
+        <h2 style="text-align: center;">
+            Puedes contactarme como prefieras. El tiempo de respuesta está entre 12h - 24h.
+        </h2>
+        <div class="center">
+            <a href="{% url 'contact' %}" class="indigo waves-effect waves-light btn-large">Contactar</a>
         </div>
-
-
     </div>
-
 
 </div>
 
