@@ -4,20 +4,265 @@
 
 {% block content %}
 
-
-<div class="container">
-
-    <div class="carousel">
-        <a class="carousel-item" href="#one!"><img
-                src="https://raw.githubusercontent.com/caicesardev/CSVTOACCESS/master/images/CSVTOACCESS-screenshot-1.png"></a>
-        <a class="carousel-item" href="#two!"><img src="{% static 'images/ecommerce-store.jpg' %}"></a>
-        <a class="carousel-item" href="#three!"><img
-                src="https://raw.githubusercontent.com/caicesardev/Notepy/master/res/images/notepy-screenshot-1.png"></a>
-        <a class="carousel-item" href="#four!"><img
-                src="https://raw.githubusercontent.com/caicesardev/GUIDownloader/master/res/images/GUIDownloader-screenshot-2.png"></a>
-        <a class="carousel-item" href="#five!"><img src="{% static 'images/this_web.png' %}"></a>
+<div>
+    <div class="container">
+        <h1 style="text-align: center; font-weight: bold;">
+            Todos mis proyectos
+        </h1>
+        <h2>
+            Sobre esta página
+        </h2>
+        <p>
+            En esta página se recopilarán todos y cada uno de los proyectos de los cuales me sienta más orgulloso. Cada
+            año se añadirán nuevos proyectos con intención de aprender tecnologias nuevas o mejorar mis habilidades.
+        </p>
+        <h2>
+            Sobre mi trabajo
+        </h2>
+        <p>
+            Soy una persona muy aplicada y responsable con mi trabajo, siempre intento dar lo mejor de mí y mis
+            proyectos son reflejo
+            de mis esfuerzos. Aún soy un programador novato con pocos años de experiencia pero tengo muchas ganas de
+            aprender y soy totalmente autodidacta.
+        </p>
     </div>
+</div>
 
+<br>
+<br>
+<br>
+
+<div class="row">
+    <div class="col s12 m9 l10">
+        <div id="guidownloader" class="section scrollspy z-depth-1">
+            <div class="container">
+                <h1>GUIDownloader</h1>
+                <h2>GUIDownloader es una aplicación de escritorio de código abierto para descargar vídeos de YouTube.
+                </h2>
+                <p>
+                    Esta aplicación escrita en Python se encarga de descargar cualquier vídeo de <a
+                        href="https://www.youtube.com" target="_blank">YouTube</a> en formato MP4 o MP3. El usuario
+                    puede elegir qué
+                    formato descargar, así como su calidad. Para descargar los vídeos, la librería yt_dlp, actúa en el
+                    backend de la aplicación validando el enlace y recogiendo los metadatos necesarios, posteriormente,
+                    al incrustar yt_dlp a Python podremos descargar dicho vídeo en el
+                    formato que deseemos con una simple función para más información consulta sobre <a
+                        href="https://github.com/yt-dlp/yt-dlp" target="_blank">yt_dlp</a>. A la hora de convertir los
+                    formatos de vídeo
+                    se usa una aplicación de
+                    terceros
+                    llamada <a href="https://ffmpeg.org/" target="_blank">FFMPEG</a> siendo este uno de los conversores
+                    de vídeo más utilizado en la actualidad.
+                </p>
+                <p>
+                    En conclusión diré que desarrollé esta aplicación porque me interesaba la idea de poder descargar
+                    vídeos de YouTube de manera rápida usando Python. Con este proyecto he aprendido sobre los
+                    diferentes formatos de vídeo y audio así como sus parámetros más importantes.
+                </p>
+                <h2>Tecnologías</h2>
+                <div class="divider"></div>
+                <br>
+                <ul class="collection">
+                    <li class="collection-item">Python 3.9.1</li>
+                    <li class="collection-item">PySide6</li>
+                    <li class="collection-item">yt_dlp</li>
+                    <li class="collection-item">FFMPEG</li>
+                </ul>
+                <h2>Galería</h2>
+                <div class="divider"></div>
+                <div class="carousel">
+                    <a class="carousel-item"
+                        href="https://raw.githubusercontent.com/caicesardev/GUIDownloader/master/res/images/GUIDownloader-screenshot-2.png"><img
+                            src="https://raw.githubusercontent.com/caicesardev/GUIDownloader/master/res/images/GUIDownloader-screenshot-2.png"></a>
+                    <a class="carousel-item"
+                        href="https://raw.githubusercontent.com/caicesardev/GUIDownloader/master/res/images/GUIDownloader-screenshot-1.png"><img
+                            src="https://raw.githubusercontent.com/caicesardev/GUIDownloader/master/res/images/GUIDownloader-screenshot-1.png"></a>
+                    <a class="carousel-item"
+                        href="https://raw.githubusercontent.com/caicesardev/GUIDownloader/master/res/images/GUIDownloader-screenshot-3.png"><img
+                            src="https://raw.githubusercontent.com/caicesardev/GUIDownloader/master/res/images/GUIDownloader-screenshot-3.png"></a>
+                </div>
+            </div>
+            <div class="right-align" style="margin: 50px;">
+                <a href="https://github.com/caicesardev/GUIDownloader"
+                    class="blue-grey waves-effect waves-light btn-large" target="_blank">Código Fuente</a>
+                <a href="https://github.com/caicesardev/GUIDownloader/releases/download/v1.0.0/GUIDownloader.exe"
+                    class="indigo waves-effect waves-light btn-large">Descargar</a>
+            </div>
+            <div class="right-align" style="margin-right: 20px;">
+                <p class="red-text">* Proyecto en desarrollo, puede contener errores</p>
+            </div>
+        </div>
+        <div id="notepy" style="margin-top: 100px;" class="section scrollspy z-depth-1">
+            <div class="container">
+                <h1>Notepy</h1>
+                <h2>Notepy es una aplicación de escritorio de código abierto para escribir textos.</h2>
+                <p>
+                    Esta aplicación escrita en <a href="https://www.python.org" target="_blank">Python</a> te permite
+                    escribir
+                    documentos de texto de la misma manera que el
+                    <a href="https://apps.microsoft.com/store/detail/windows-notepad/9MSMLRH6LZF3?hl=es-es&gl=ES"
+                        target="_blank">bloc de notas tradicional de Windows</a>. Las funciones de esta aplicación son
+                    las mismas que el de un
+                    bloc de notas, puedes escribir, modificar y guardar archivos .txt donde y cuando tú quieras. Para
+                    hacer la interfaz gráfica, utilicé una librería de Python llamada <a
+                        href="https://doc.qt.io/qtforpython/index.html" target="_blank">PySide6</a>. Tengo planes de
+                    ampliar
+                    las funcionalidades de esta aplicación en un futuro y ofrecer temas de colores y más herramientas de
+                    edición de texto.
+                </p>
+                <p>Para concluir diré que desarrollé esta aplicación para aprender cómo funciona y cómo se hace una
+                    aplicación de bloc de notas empleando Python como lenguaje de programación.</p>
+                <h2>Tecnologías</h2>
+                <div class="divider"></div>
+                <br>
+                <ul class="collection">
+                    <li class="collection-item">Python 3.9.1</li>
+                    <li class="collection-item">PySide6</li>
+                </ul>
+                <h2>Galería</h2>
+                <div class="divider"></div>
+                <div class="carousel">
+                    <a class="carousel-item"
+                        href="https://raw.githubusercontent.com/caicesardev/Notepy/master/res/images/notepy-screenshot-1.png"><img
+                            src="https://raw.githubusercontent.com/caicesardev/Notepy/master/res/images/notepy-screenshot-1.png"></a>
+                    <a class="carousel-item"
+                        href="https://raw.githubusercontent.com/caicesardev/Notepy/master/res/images/notepy-screenshot-3.png"><img
+                            src="https://raw.githubusercontent.com/caicesardev/Notepy/master/res/images/notepy-screenshot-3.png"></a>
+                    <a class="carousel-item"
+                        href="https://raw.githubusercontent.com/caicesardev/Notepy/master/res/images/notepy-screenshot-2.png"><img
+                            src="https://raw.githubusercontent.com/caicesardev/Notepy/master/res/images/notepy-screenshot-2.png"></a>
+                </div>
+            </div>
+            <div class="right-align" style="margin: 50px;">
+                <a href="https://github.com/caicesardev/Notepy" class="blue-grey waves-effect waves-light btn-large"
+                    target="_blank">Código Fuente</a>
+                <a href="https://github.com/caicesardev/Notepy/releases/download/v1.0.0/Notepy.exe"
+                    class="indigo waves-effect waves-light btn-large">Descargar</a>
+            </div>
+            <div class="right-align" style="margin-right: 20px;">
+                <p class="red-text">* Proyecto en desarrollo, puede contener errores</p>
+            </div>
+        </div>
+        <div id="ecommerce" style="margin-top: 100px;" class="section scrollspy z-depth-1">
+            <div class="container">
+                <h1>Ecommerce</h1>
+                <h2>Moonlight es un Ecommerce creado para...</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quasi ex quis, quod nulla laborum
+                    excepturi porro enim blanditiis esse, animi accusantium libero officia error nisi aliquam dolore
+                    omnis ipsum. Doloremque animi doloribus quidem. Quibusdam assumenda unde odit nesciunt
+                    doloribus,
+                    excepturi temporibus repudiandae, laborum quaerat natus quidem ut quisquam sit. Ratione qui
+                    voluptatem facilis amet quisquam dolorem ipsum ipsa obcaecati repellat saepe animi praesentium
+                    quas
+                    pariatur aperiam tempore, nihil esse accusantium deleniti error incidunt consequuntur, vitae
+                    perferendis ut unde. Maiores et atque tempore quibusdam laborum magni, corporis debitis in
+                    accusantium doloremque. Alias explicabo iste dolorum architecto. Quis autem animi eius officia
+                    eveniet. Beatae dolorem officia libero nemo sunt nesciunt cupiditate iure. Quos, placeat? Sint
+                    repudiandae, assumenda commodi dolores enim recusandae cumque voluptas cupiditate eaque sapiente
+                    veritatis vero quas architecto odit amet? Voluptates adipisci facilis maxime necessitatibus,
+                    vitae
+                    veniam natus placeat quaerat, eum ratione, totam nesciunt eius aspernatur impedit possimus ullam
+                    animi voluptas iusto minima est recusandae. Labore atque beatae esse?
+                </p>
+                <h2>Galería</h2>
+                <div class="divider"></div>
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div id="csvtoaccess" style="margin-top: 100px;" class="section scrollspy z-depth-1">
+            <div class="container">
+                <h1>CSVToAccess</h1>
+                <h2>CSVToAccess es un script.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in autem id voluptate possimus
+                    a
+                    sint incidunt corrupti quas eveniet, harum dolorem cum. Voluptas natus aspernatur odit quis
+                    consequuntur quidem tempora perferendis sed, magnam illum corrupti fuga quae commodi voluptatum
+                    adipisci nesciunt unde, animi fugiat. Maiores explicabo dolor asperiores provident expedita
+                    repellat
+                    officia optio libero magni laudantium vero excepturi sit sequi velit obcaecati aliquid,
+                    architecto
+                    et! Beatae aliquam autem consequatur dolor expedita impedit quod, corporis, nam tempore libero
+                    officia consectetur, dignissimos atque nemo quibusdam aut cumque ducimus fuga. Praesentium,
+                    voluptatibus explicabo rerum reiciendis itaque est! Quisquam, tempore voluptatem voluptatum
+                    libero
+                    officia excepturi? Consectetur a deleniti unde omnis officiis iste asperiores sit dolorem
+                    tempore
+                    sapiente, nihil ducimus voluptas consequatur impedit maxime aspernatur molestiae et autem?
+                    Quaerat
+                    vitae pariatur eum, nobis harum vero ullam ut molestiae rem quidem, asperiores, ducimus tenetur
+                    ipsam facilis atque velit aliquam deserunt placeat sapiente minus molestias quisquam!
+                </p>
+                <h2>Galería</h2>
+                <div class="divider"></div>
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <div id="thisweb" style="margin-top: 100px;" class="section scrollspy z-depth-1">
+            <div class="container">
+                <h1>Esta página</h1>
+                <h2>Esta página web es un ejemplo.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, reiciendis? Labore facilis nemo
+                    cum
+                    totam quam minus, animi deleniti et natus omnis in atque necessitatibus unde sint quas fugiat
+                    itaque
+                    non assumenda perferendis tempore earum. Exercitationem cupiditate voluptate inventore, totam
+                    magni
+                    delectus aliquam rerum porro accusamus provident, animi officiis repellendus vitae labore
+                    suscipit
+                    excepturi tenetur natus. Quas, quaerat. Incidunt necessitatibus quod saepe sint. Eligendi totam
+                    porro nulla odit ea voluptatum voluptatibus excepturi? Autem veritatis itaque iure quos
+                    architecto
+                    ad delectus. Officia, nobis ad! Quaerat excepturi, nesciunt eos voluptas tenetur veritatis
+                    quisquam
+                    rem corporis consectetur cum in sint recusandae at! Numquam cumque ducimus culpa voluptates
+                    accusantium distinctio cum perspiciatis quasi magnam atque, temporibus illo aperiam quidem minus
+                    alias iure hic provident!
+                </p>
+                <h2>Galería</h2>
+                <div class="divider"></div>
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                    <a class="carousel-item" href="#five!"><img
+                            src="https://materializecss.com/images/sample-1.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents">
+            <li><a href="#guidownloader">GUIDownloader</a></li>
+            <li><a href="#notepy">Notepy</a></li>
+            <li><a href="#ecommerce">Ecommerce</a></li>
+            <li><a href="#csvtoaccess">CSVToAccess</a></li>
+            <li><a href="#thisweb">Esta página</a></li>
+        </ul>
+    </div>
 </div>
 
 

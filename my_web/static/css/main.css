@@ -21,6 +21,10 @@ h2 {
     font-size: 1.2rem!important;
 }
 
+.table-of-contents {
+    position: fixed;
+}
+
 .custom-logo {
     font-family: 'Berkshire Swash', cursive;
     margin-left: 20px;
