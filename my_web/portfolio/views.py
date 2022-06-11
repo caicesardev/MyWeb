@@ -17,6 +17,16 @@ def about(request):
     return render(request, 'portfolio/about.html')
 
 
+def faq(request):
+    context = {}
+    return render(request, 'portfolio/faq.html')
+
+
+def blog(request):
+    context = {}
+    return render(request, 'portfolio/blog.html')
+
+
 def contact(request):
     context = {}
     return render(request, 'portfolio/contact.html')
