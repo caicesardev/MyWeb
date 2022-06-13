@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
 from .models import *
 
 
@@ -29,4 +30,18 @@ def blog(request):
 
 def contact(request):
     context = {}
-    return render(request, 'portfolio/contact.html')
+    if request.method == "POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        subject = request.POST['subject']
+        message = request.POST['message']
+        # send mail
+        send_mail(
+            subject,  # subject
+            message,  # message
+            email,  # from email
+            ['caicesardev@gmail.com'],  # to email
+        )
+        return render(request, 'portfolio/contact.html', {'name': name})
+    else:
+        return render(request, 'portfolio/contact.html')
