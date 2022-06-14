@@ -4,69 +4,69 @@
 
 {% block content %}
 
-
 <div class="container" style="padding-top: 120px;">
-
     {% if name %}
-    <div class="center">
-        <h2>Tu mensaje ha sido enviado correctamente, {{name}}</h2>
+    <div class="center-align">
+        <h1 style="font-weight: bold;">¡Enhorabuena {{ name }}!</h1>
+        <h2>
+            Tu mensaje ha sido enviado correctamente.
+        </h2>
+        <p>Recibirás una respuesta entre 12h - 24h.</p>
+        <a href="{% url 'home' %}" class="indigo waves-effect waves-light btn-large">Volver a inicio</a>
     </div>
-    {% endif %}
-
+    {% else %}
     <div class="row">
         <form class="col s12" action="{% url 'contact' %}" method="post">
             {% csrf_token %}
             <div class="row">
                 <div class="input-field col s6">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate" name="name">
+                    <input id="icon_prefix" type="text" class="validate" name="name" required>
                     <label for="icon_prefix">Nombre</label>
+                    <span class="helper-text" data-error="Rellene este campo" data-success="Correcto">Escriba su
+                        nombre</span>
                 </div>
                 <div class="input-field col s6">
                     <i class="material-icons prefix">email</i>
-                    <input id="email" type="email" class="validate" name="email">
+                    <input id="email" type="email" class="validate" name="email" required>
                     <label for="email">Correo</label>
+                    <span class="helper-text" data-error="Rellene este campo" data-success="Correcto">Escriba su
+                        correo</span>
                 </div>
             </div>
-
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">subject</i>
                     <input id="subject" type="text" class="validate" name="subject">
                     <label for="subject">Asunto</label>
+                    <span class="helper-text" data-success="Correcto">Escriba el asunto
+                        del mensaje</span>
                 </div>
             </div>
-
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">message</i>
-                    <textarea id="message" type="text" class="materialize-textarea" name="message"></textarea>
+                    <textarea id="message" type="text" class="materialize-textarea" name="message" required></textarea>
                     <label for="message">Mensaje</label>
+                    <span class="helper-text">Escriba su
+                        mensaje</span>
                 </div>
             </div>
-
             <div class="row">
-
                 <div class="submit-row col s12 right-align">
-
                     <button class="indigo btn-floating btn-large waves-effect waves-light"
                         onclick="M.toast({html: 'Formulario reiniciado', classes: 'indigo'})" type="reset"
                         style="margin-right: 20px;">
                         <i class="material-icons">replay</i>
                     </button>
-
                     <button class="indigo btn-floating btn-large waves-effect waves-light" type="submit" name="action">
                         <i class="material-icons">send</i>
                     </button>
-
                 </div>
-
             </div>
-
         </form>
     </div>
-
 </div>
-
+{% endif %}
 
 {% endblock content %}

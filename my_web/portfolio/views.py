@@ -37,8 +37,8 @@ def contact(request):
         message = request.POST['message']
         # send mail
         send_mail(
-            subject,  # subject
-            message,  # message
+            f'{subject}',  # subject
+            f'Mensaje de: {name} | {email} \n\n{message}',  # message
             email,  # from email
             ['caicesardev@gmail.com'],  # to email
         )
