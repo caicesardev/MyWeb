@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    max-height: 64px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+h1 {
+    font-size: 2.2rem!important;
+}
+
+h2 {
+    font-size: 1.2rem!important;
+}
+
+.table-of-contents {
+    position: fixed;
+}
+
+.custom-logo {
+    font-family: 'Berkshire Swash', cursive;
+    margin-left: 20px;
+}
+
+.footer-custom-logo {
+    font-family: 'Berkshire Swash', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.parallax-title {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 0;
+    color: #1c898f;
+}
+
+.parallax-subtitle {
+    font-family: 'Arvo', serif;
+    font-size: 1.3rem;
+    color: #474554;
+    background: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    margin-top: 20px!important;
+}
+
+.reverse-row {
+    flex-direction: row-reverse!important;
+}
+
+@media only screen and (max-width: 800px) {
+    .custom-logo {
+        margin-left: 0px;
+    }
+    .container-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+    .reverse-row {
+        flex-direction: column!important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .container-flex {
+        flex-direction: row;
+    }
+} 
+
