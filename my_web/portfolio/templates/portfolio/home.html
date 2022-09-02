@@ -4,29 +4,28 @@
 
 {% block content %}
 
-<div class="parallax-container z-depth-1">
-    <div class="parallax">
-        <img src="{% static 'images/parallax.jpg' %}" alt="parallax-image">
-    </div>
-    <div class="container">
-        <div class="row" style="margin-top: 100px;">
-            <p class="parallax-title col s12">Hola Mundo</p>
-        </div>
-        <div style="display: flex; justify-content: center;" class="row">
-            <p class="parallax-subtitle z-depth-1">Soy Caio Gomes, desarrollador Full-Stack
-                de páginas web y aplicaciones.
-            </p>
-        </div>
-        <div style="display: flex; justify-content: center;" class="container row">
-            <a style="margin-right: 10px;" href="{% url 'about' %}"
-                class="indigo waves-effect waves-light btn-large">Saber
-                más</a>
-            <a href="{% url 'contact' %}" class="indigo waves-effect waves-light btn-large">Contactar</a>
+<div class="parallax-container" style="min-height: 90vh;">
+    <div class="parallax"><img src="{% static 'images/22.jpg' %}"></div>
+    <div class="homepage-container">
+        <div class="row homepage-container-row">
+            <p class=" parallax-title ">Caio Gomes</p>
+            <p class="parallax-subtitle">Desarrollador de aplicaciones de escritorio y páginas web</p>
+            <div class="row">
+                <div class="col"><a href="{% url 'about' %}" class="cyan darken-4 waves-effect waves-light btn"><i
+                            class="material-icons left">person_pin</i>Acerca
+                        de
+                        mí</a>
+                </div>
+                <div class="col"><a href="{% url 'contact' %}" class="blue darken-4 waves-effect waves-light btn"><i
+                            class="material-icons left">call</i>Contactar</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="blue lighten-5" style="padding-top: 20px; padding-bottom: 20px;">
+
+<div style="padding-top: 20px; padding-bottom: 20px;">
     <div class="container">
         <h1 style="text-align: center; font-weight: bold;">Mis proyectos más recientes</h1>
         <h2 style="text-align: center;">Estos son algunos de mis proyectos más recientes. Algunos
@@ -173,7 +172,7 @@
                             Saber más
                         </a>
                         <a href="https://raw.githubusercontent.com/caicesardev/CV/master/gomes_caio_cv.pdf"
-                            target="_blank" class="indigo waves-effect waves-light btn-large">Descargar CV</a>
+                            target="_blank" class="black waves-effect waves-light btn-large">Descargar CV</a>
                     </div>
                 </div>
             </div>
@@ -188,7 +187,7 @@
             Puedes contactarme como prefieras. El tiempo de respuesta está entre 12h - 24h.
         </h2>
         <div class="center">
-            <a href="{% url 'contact' %}" class="indigo waves-effect waves-light btn-large">Contactar</a>
+            <a href="{% url 'contact' %}" class="black waves-effect waves-light btn-large">Contactar</a>
         </div>
     </div>
 </div>

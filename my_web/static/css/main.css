@@ -36,22 +36,36 @@ h2 {
     font-size: 30px;
 }
 
+.homepage-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.homepage-container-row {
+    display: flex; 
+    flex-direction: column; 
+    width: 50%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
 .parallax-title {
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
     text-align: center;
-    font-size: 5rem;
+    text-transform: uppercase;
     line-height: 0;
-    color: #1c898f;
+    margin-bottom: 2rem;
+    color: white;
 }
 
 .parallax-subtitle {
-    font-family: 'Arvo', serif;
-    font-size: 1.3rem;
-    color: #474554;
-    background: whitesmoke;
+    font-size: 17px;
     text-align: center;
-    padding: 15px;
-    border-radius: 8px;
+    color: #cccccc;
 }
 
 .container-flex {
@@ -78,7 +92,11 @@ h2 {
         flex-direction: column!important;
     }
     .parallax-title {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
+        margin-bottom: 1.7rem;
+    }
+    .homepage-container-row {
+        width: 90%;
     }
 }
 
